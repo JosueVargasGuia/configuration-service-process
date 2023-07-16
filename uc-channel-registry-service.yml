@@ -2,9 +2,9 @@ spring:
   eureka:
     instance:
       hostname: localhost
-      statusPageUrl: https://${eureka.instance.hostname}/info
-      healthCheckUrl: https://${eureka.instance.hostname}/health
-      homePageUrl: https://${eureka.instance.hostname}/  
+      statusPageUrl: http://${eureka.instance.hostname}/info
+      healthCheckUrl: http://${eureka.instance.hostname}/health
+      homePageUrl: http://${eureka.instance.hostname}/  
     client:   
       fetch-registry: false
       register-with-eureka: true
