@@ -1,16 +1,5 @@
 name:
   host: gateway
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true    
-      routes:
-        - id: ux-channel-user-authorization
-          uri: lb://ux-channel-user-authorization
-          predicates:
-            - Path=/user/**
 management:
    endpoint:
       gateway:
