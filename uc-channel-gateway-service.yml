@@ -7,10 +7,18 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: ux-channel-user-authorization
-        uri: lb://ux-channel-user-authorization
-        predicates:
-        - Path=/user/**
+         - id: ux-channel-user-authorization
+           uri: lb://ux-channel-user-authorization
+           predicates:
+           - Path=/user/**
+management:
+   endpoint:
+      gateway:
+         enabled: true
+   endpoints:
+      web:
+         exposure:
+            include: gateway
 eureka:
   client:
     service-url:
