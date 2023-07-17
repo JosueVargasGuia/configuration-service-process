@@ -1,17 +1,16 @@
 name:
   host: gateway
-spring: 
+spring:
   cloud:
     gateway:
       discovery:
         locator:
-          enabled: true
-      z-routes:
+          enabled: true    
+      routes:
         - id: ux-channel-user-authorization
-          #uri: lb://ux-channel-user-authorization
-          uri: http://localhost:9090/
+          uri: lb://ux-channel-user-authorization
           predicates:
-          - Path=/user/**
+            - Path=/user/**
 management:
    endpoint:
       gateway:
