@@ -11,3 +11,11 @@ spring:
         uri: lb://ux-channel-user-authorization
         predicates:
         - Path=/user/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true    
+  instance:
+    hostname: localhost
