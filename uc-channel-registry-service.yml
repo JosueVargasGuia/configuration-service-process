@@ -6,10 +6,10 @@ spring:
       hostname: localhost
       statusPageUrl: https://${eureka.hostname}/info
       healthCheckUrl: https://${eureka.hostname}/health
-      homePageUrl: https://${eureka.hostname}/  
+      homePageUrl: https://${eureka.hostname}/
     client:   
       fetch-registry: false
-      register-with-eureka: true
+      register-with-eureka: false
       healthcheck: 
         enable: true
       service-url:
