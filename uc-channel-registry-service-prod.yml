@@ -2,7 +2,7 @@ name:
   host: registry
 eureka:
   instance:
-    hostname: 192.168.18.11
+    hostname: localhost
     statusPageUrl: https://${eureka.hostname}/info
     healthCheckUrl: https://${eureka.hostname}/health
     homePageUrl: https://${eureka.hostname}/
