@@ -3,8 +3,8 @@ name:
 eureka:
   client:
     service-url:
-      defaultZone: http://10.0.2.15:8761/eureka/
+      defaultZone: http://192.168.18.11:8761/eureka/
     fetch-registry: true
     register-with-eureka: true    
   instance:
-    hostname: 10.0.2.15
+    hostname: 192.168.18.11
