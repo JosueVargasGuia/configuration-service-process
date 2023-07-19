@@ -6,4 +6,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true    
   instance:
-    hostname: 192.168.18.11
+    hostname: localhost
