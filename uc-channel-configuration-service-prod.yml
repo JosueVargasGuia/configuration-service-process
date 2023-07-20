@@ -6,3 +6,5 @@ eureka:
     register-with-eureka: true    
   instance:
     hostname: localhost
+app:
+  name: git-${spring.application.name}-${spring.profile.active}
