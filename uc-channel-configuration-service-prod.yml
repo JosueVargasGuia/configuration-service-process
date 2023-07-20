@@ -1,5 +1,3 @@
-name:
-  host: confirations
 eureka:
   client:
     service-url:
